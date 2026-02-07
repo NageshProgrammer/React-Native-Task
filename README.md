@@ -1,97 +1,119 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+CRM Leads App (React Native CLI)
 
-# Getting Started
+This project is a React Native CLI application that implements a CRM Leads List screen as part of the technical assignment.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+The application fetches user data from a public API and displays it in a clean, structured, and searchable list UI.
 
-## Step 1: Start Metro
+🚀 Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Fetches leads from:
+https://dummyjson.com/users
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Displays leads using FlatList
 
-```sh
-# Using npm
-npm start
+Client-side search filtering
 
-# OR using Yarn
-yarn start
-```
+Call button using React Native Linking API
 
-## Step 2: Build and run your app
+Clean and modular folder structure
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Functional components with React Hooks
 
-### Android
+🧱 Project Structure
+CRMLeadsApp
+│
+├── android
+├── ios
+├── src
+│   ├── components
+│   │   └── LeadItem.js
+│   ├── screens
+│   │   └── LeadsScreen.js
+│   └── services
+│       └── api.js
+│
+├── App.js
+├── index.js
+└── package.json
 
-```sh
-# Using npm
-npm run android
+🛠 Tech Stack
 
-# OR using Yarn
-yarn android
-```
+React Native CLI
 
-### iOS
+JavaScript (Functional Components)
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+React Hooks (useState, useEffect)
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+FlatList
 
-```sh
-bundle install
-```
+Linking API
 
-Then, and every time you update your native dependencies, run:
+Android (Gradle)
 
-```sh
-bundle exec pod install
-```
+📦 Installation
+1️⃣ Clone the repository
+git clone <repository-url>
+cd CRMLeadsApp
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+2️⃣ Install dependencies
+npm install
 
-```sh
-# Using npm
-npm run ios
+▶️ Running the App
+Android
 
-# OR using Yarn
-yarn ios
-```
+Make sure you have:
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+Node 20+
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+JDK 17
 
-## Step 3: Modify your app
+Android Studio installed
 
-Now that you have successfully run the app, let's make changes!
+Android SDK configured
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+An emulator running or a physical device connected
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+Then run:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+npx react-native start
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+Open a new terminal:
 
-### Now what?
+npx react-native run-android
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+🔍 Implementation Details
 
-# Troubleshooting
+Data is fetched using fetch() inside useEffect
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+State is managed using useState
 
-# Learn More
+Search functionality filters locally from fetched data
 
-To learn more about React Native, take a look at the following resources:
+Call button uses:
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Linking.openURL(`tel:${phone}`)
+
+
+UI designed with clean spacing and reusable component (LeadItem)
+
+📱 Assignment Notes
+
+This project focuses on:
+
+Clean UI implementation
+
+Proper component separation
+
+React Hooks usage
+
+Client-side filtering
+
+Mobile UX structure
+
+👤 Author
+
+Nagesh Yalparatte
+GitHub: https://github.com/NageshProgrammer
+
+LinkedIn: https://www.linkedin.com/in/nagesh-yalparatte-08199a22a/
