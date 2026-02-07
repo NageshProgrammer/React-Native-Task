@@ -110,10 +110,3 @@ React Hooks usage
 Client-side filtering
 
 Mobile UX structure
-
-👤 Author
-
-Nagesh Yalparatte
-GitHub: https://github.com/NageshProgrammer
-
-LinkedIn: https://www.linkedin.com/in/nagesh-yalparatte-08199a22a/
