@@ -1,23 +1,25 @@
-CRM Leads App (React Native CLI)
+🚀 CRM Leads App – React Native CLI
 
-This project is a React Native CLI application that implements a CRM Leads List screen as part of the technical assignment.
+A simple and clean CRM Leads Mobile Application built using React Native CLI as part of the technical assignment.
 
-The application fetches user data from a public API and displays it in a clean, structured, and searchable list UI.
+The application fetches user data from a public API and displays it in a structured, searchable leads list.
 
-🚀 Features
+📱 Features
 
-Fetches leads from:
+✅ Fetch leads from public API
+
+✅ Display leads using FlatList
+
+✅ Client-side search functionality
+
+✅ Click-to-call using React Native Linking API
+
+✅ Clean, modular folder structure
+
+✅ Functional components with React Hooks
+
+🌐 API Used
 https://dummyjson.com/users
-
-Displays leads using FlatList
-
-Client-side search filtering
-
-Call button using React Native Linking API
-
-Clean and modular folder structure
-
-Functional components with React Hooks
 
 🧱 Project Structure
 CRMLeadsApp
@@ -34,13 +36,14 @@ CRMLeadsApp
 │
 ├── App.js
 ├── index.js
-└── package.json
+├── package.json
+└── README.md
 
 🛠 Tech Stack
 
 React Native CLI
 
-JavaScript (Functional Components)
+JavaScript (ES6+)
 
 React Hooks (useState, useEffect)
 
@@ -48,22 +51,22 @@ FlatList
 
 Linking API
 
-Android (Gradle)
+Android (Gradle Build System)
 
 📦 Installation
-1️⃣ Clone the repository
-git clone <repository-url>
+1️⃣ Clone the Repository
+git clone https://github.com/NageshProgrammer/CRMLeadsApp.git
 cd CRMLeadsApp
 
-2️⃣ Install dependencies
+2️⃣ Install Dependencies
 npm install
 
-▶️ Running the App
-Android
+▶️ Running the Application
+✅ Prerequisites
 
 Make sure you have:
 
-Node 20+
+Node.js (v20+)
 
 JDK 17
 
@@ -71,42 +74,44 @@ Android Studio installed
 
 Android SDK configured
 
-An emulator running or a physical device connected
+Emulator running OR physical Android device connected
 
-Then run:
-
+🔹 Start Metro Bundler
 npx react-native start
 
+🔹 Run on Android
 
-Open a new terminal:
+In a new terminal:
 
 npx react-native run-android
 
 🔍 Implementation Details
 
-Data is fetched using fetch() inside useEffect
+Data fetching handled inside useEffect
 
-State is managed using useState
+Application state managed with useState
 
-Search functionality filters locally from fetched data
+Search filters the locally stored leads list
 
-Call button uses:
+Call functionality implemented using:
 
 Linking.openURL(`tel:${phone}`)
 
 
-UI designed with clean spacing and reusable component (LeadItem)
+Reusable UI component: LeadItem
 
-📱 Assignment Notes
+Main screen: LeadsScreen
 
-This project focuses on:
+🎯 Assignment Objectives Covered
 
-Clean UI implementation
+✔ Clean UI implementation
 
-Proper component separation
+✔ Proper component structure
 
-React Hooks usage
+✔ API integration
 
-Client-side filtering
+✔ React Hooks usage
 
-Mobile UX structure
+✔ Client-side search filtering
+
+✔ Mobile-friendly UX design
